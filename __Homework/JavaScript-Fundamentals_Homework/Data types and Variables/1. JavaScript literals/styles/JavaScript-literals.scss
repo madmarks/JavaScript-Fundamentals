@@ -1,0 +1,23 @@
+﻿body, header, section, div, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    header {
+        text-align: center;
+        color: black;
+
+        & > ul{
+            font-size:1.3rem;
+            margin-top:15px;
+            margin-bottom:35px;
+            list-style:none;
+        }
+    }
+
+    #console {
+        margin-top:15px;
+        margin-left:5px;
+    }
+}
