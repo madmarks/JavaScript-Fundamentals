@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Problem 3. Rectangle area</title>
+    <link href="styles/Rectangle-area.css" rel="stylesheet" />
+    <link href="../js-console-style/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <h1>Operators and Expressions</h1>
+        <h2>Problem 3. Rectangle area</h2>
+        <ul>
+            <li>Write an expression that calculates rectangle’s area by given width and height.</li>
+        </ul>
+    </header>
+    <section id="input-section">
+        <label for="width">Enter Width:</label>
+        <input type="text" id="width" />
+        <label for="height">Enter Height:</label>
+        <input type="text" id="height" />
+        <button id="check" onclick="calculateArea()">Check</button>
+        <button id="clear" onclick="jsConsole.clearConsole()">Clear</button>
+    </section>
+    <section id="console">
+        <div id="js-console"></div>
+    </section>
+    <script src="../js-console-script/js-console.js"></script>
+    <script src="scripts/Rectangle-area.js"></script>
+</body>
+</html>

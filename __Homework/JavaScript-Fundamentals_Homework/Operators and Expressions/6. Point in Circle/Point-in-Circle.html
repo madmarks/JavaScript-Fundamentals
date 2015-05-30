@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Problem 6. Point in Circle</title>
+    <link href="styles/Point-in-Circle.css" rel="stylesheet" />
+    <link href="../js-console-style/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <h1>Operators and Expressions</h1>
+        <h2>Problem 6. Point in Circle</h2>
+        <ul>
+            <li>Write an expression that checks if given point P(x, y) is within a circle K({0,0}, 5). //{0,0} is the centre and 5 is the radius</li>
+        </ul>
+    </header>
+    <section id="input-section">
+        <label for="pointX">x:</label>
+        <input type="text" id="pointX" />
+        <label for="pointY">y:</label>
+        <input type="text" id="pointY" />
+        <button id="check" onclick="isInsideCircle()">Check</button>
+        <button id="clear" onclick="jsConsole.clearConsole()">Clear</button>
+    </section>
+    <section id="console">
+        <div id="js-console"></div>
+    </section>
+    <script src="../js-console-script/js-console.js"></script>
+    <script src="scripts/Point-in-Circle.js"></script>
+</body>
+</html>

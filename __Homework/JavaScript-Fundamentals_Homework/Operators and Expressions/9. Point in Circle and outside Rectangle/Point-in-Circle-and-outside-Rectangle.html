@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Problem 9. Point in Circle and outside Rectangle</title>
+    <link href="styles/Point-in-Circle-and-outside-Rectangle.css" rel="stylesheet" />
+    <link href="../js-console-style/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <h1>Operators and Expressions</h1>
+        <h2>Problem 9. Point in Circle and outside Rectangle</h2>
+        <ul>
+            <li>Write an expression that checks for given point P(x, y) if it is within the circle K( (1,1), 3) and out of the rectangle R(top=1, left=-1, width=6, height=2).</li>
+        </ul>
+    </header>
+    <section id="input-section">
+        <label for="pointX">x:</label>
+        <input type="text" id="pointX" />
+        <label for="pointY">y:</label>
+        <input type="text" id="pointY" />
+        <button id="check" onclick="isInsideK_and_OutsideOfR()">Check</button>
+        <button id="clear" onclick="jsConsole.clearConsole()">Clear</button>
+    </section>
+    <section id="console">
+        <div id="js-console"></div>
+    </section>
+    <script src="../js-console-script/js-console.js"></script>
+    <script src="scripts/Point-in-Circle-and-outside-Rectangle.js"></script>
+</body>
+</html>
