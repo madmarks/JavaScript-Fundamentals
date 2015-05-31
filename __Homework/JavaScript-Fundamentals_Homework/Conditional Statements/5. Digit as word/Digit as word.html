@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Problem 5. Digit as word</title>
+    <link href="styles/Digit as word.css" rel="stylesheet" />
+    <link href="../js-console-style/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <h1>Conditional statements</h1>
+        <h2>Problem 5. Digit as word</h2>
+        <ul>
+            <li>Write a script that asks for a digit (0-9), and depending on the input, shows the digit as a word (in English).</li>
+            <li>Print “not a digit” in case of invalid input.</li>
+            <li>Use a switch statement.</li>
+        </ul>
+    </header>
+    <section id="input-section">
+        <label for="digit">Digit:</label>
+        <input type="text" id="digit" />
+        <button id="check" onclick="digitAsWord()">Check</button>
+        <button id="clear" onclick="jsConsole.clearConsole()">Clear</button>
+    </section>
+    <section id="console">
+        <div id="js-console"></div>
+    </section>
+    <script src="../js-console-script/js-console.js"></script>
+    <script src="scripts/Digit as word.js"></script>
+</body>
+</html>

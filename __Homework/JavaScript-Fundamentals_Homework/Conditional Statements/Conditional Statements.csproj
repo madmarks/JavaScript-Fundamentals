@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{232928D4-0EFE-4B57-AB74-8DB5CACB5E2F}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Conditional_Statements</RootNamespace>
+    <AssemblyName>Conditional Statements</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1. Exchange if greater\styles\Exchange if greater.scss" />
+    <Content Include="2. Multiplication Sign\styles\Multiplication Sign.scss" />
+    <Content Include="3. The biggest of Three\styles\The biggest of Three.scss" />
+    <Content Include="5. Digit as word\styles\Digit as word.scss" />
+    <Content Include="6. Quadratic equation\styles\Quadratic equation.scss" />
+    <Content Include="7. The biggest of five numbers\styles\The biggest of five numbers.css">
+      <DependentUpon>The biggest of five numbers.scss</DependentUpon>
+    </Content>
+    <Content Include="7. The biggest of five numbers\styles\The biggest of five numbers.min.css">
+      <DependentUpon>The biggest of five numbers.css</DependentUpon>
+    </Content>
+    <Content Include="7. The biggest of five numbers\styles\The biggest of five numbers.scss" />
+    <Content Include="8. Number as words\styles\Number as words.css">
+      <DependentUpon>Number as words.scss</DependentUpon>
+    </Content>
+    <Content Include="8. Number as words\styles\Number as words.min.css">
+      <DependentUpon>Number as words.css</DependentUpon>
+    </Content>
+    <Content Include="8. Number as words\styles\Number as words.scss" />
+    <Content Include="1. Exchange if greater\styles\Exchange if greater.css.map">
+      <DependentUpon>Exchange if greater.css</DependentUpon>
+    </Content>
+    <Content Include="2. Multiplication Sign\styles\Multiplication Sign.css.map">
+      <DependentUpon>Multiplication Sign.css</DependentUpon>
+    </Content>
+    <Content Include="3. The biggest of Three\styles\The biggest of Three.css.map">
+      <DependentUpon>The biggest of Three.css</DependentUpon>
+    </Content>
+    <Content Include="4. Sort 3 numbers\styles\Sort 3 numbers.scss" />
+    <Content Include="4. Sort 3 numbers\styles\Sort 3 numbers.css.map">
+      <DependentUpon>Sort 3 numbers.css</DependentUpon>
+    </Content>
+    <Content Include="5. Digit as word\styles\Digit as word.css.map">
+      <DependentUpon>Digit as word.css</DependentUpon>
+    </Content>
+    <Content Include="6. Quadratic equation\styles\Quadratic equation.css.map">
+      <DependentUpon>Quadratic equation.css</DependentUpon>
+    </Content>
+    <Content Include="7. The biggest of five numbers\styles\The biggest of five numbers.css.map">
+      <DependentUpon>The biggest of five numbers.css</DependentUpon>
+    </Content>
+    <Content Include="js-console-style\js-console.css">
+      <DependentUpon>js-console.less</DependentUpon>
+    </Content>
+    <Content Include="js-console-style\js-console.less" />
+    <Content Include="js-console-style\js-console.css.map">
+      <DependentUpon>js-console.css</DependentUpon>
+    </Content>
+    <Content Include="8. Number as words\styles\Number as words.css.map">
+      <DependentUpon>Number as words.css</DependentUpon>
+    </Content>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1. Exchange if greater\Exchange if greater.html" />
+    <Content Include="1. Exchange if greater\scripts\Exchange if greater.js" />
+    <Content Include="1. Exchange if greater\styles\Exchange if greater.css">
+      <DependentUpon>Exchange if greater.scss</DependentUpon>
+    </Content>
+    <Content Include="1. Exchange if greater\styles\Exchange if greater.min.css">
+      <DependentUpon>Exchange if greater.css</DependentUpon>
+    </Content>
+    <Content Include="2. Multiplication Sign\Multiplication Sign.html" />
+    <Content Include="2. Multiplication Sign\scripts\Multiplication Sign.js" />
+    <Content Include="2. Multiplication Sign\styles\Multiplication Sign.css">
+      <DependentUpon>Multiplication Sign.scss</DependentUpon>
+    </Content>
+    <Content Include="2. Multiplication Sign\styles\Multiplication Sign.min.css">
+      <DependentUpon>Multiplication Sign.css</DependentUpon>
+    </Content>
+    <Content Include="3. The biggest of Three\scripts\The biggest of Three.js" />
+    <Content Include="3. The biggest of Three\styles\The biggest of Three.css">
+      <DependentUpon>The biggest of Three.scss</DependentUpon>
+    </Content>
+    <Content Include="3. The biggest of Three\styles\The biggest of Three.min.css">
+      <DependentUpon>The biggest of Three.css</DependentUpon>
+    </Content>
+    <Content Include="3. The biggest of Three\The biggest of Three.html" />
+    <Content Include="4. Sort 3 numbers\scripts\Sort 3 numbers.js" />
+    <Content Include="4. Sort 3 numbers\Sort 3 numbers.html" />
+    <Content Include="4. Sort 3 numbers\styles\Sort 3 numbers.css">
+      <DependentUpon>Sort 3 numbers.scss</DependentUpon>
+    </Content>
+    <Content Include="4. Sort 3 numbers\styles\Sort 3 numbers.min.css">
+      <DependentUpon>Sort 3 numbers.css</DependentUpon>
+    </Content>
+    <Content Include="5. Digit as word\Digit as word.html" />
+    <Content Include="5. Digit as word\scripts\Digit as word.js" />
+    <Content Include="5. Digit as word\styles\Digit as word.css">
+      <DependentUpon>Digit as word.scss</DependentUpon>
+    </Content>
+    <Content Include="5. Digit as word\styles\Digit as word.min.css">
+      <DependentUpon>Digit as word.css</DependentUpon>
+    </Content>
+    <Content Include="6. Quadratic equation\Quadratic equation.html" />
+    <Content Include="6. Quadratic equation\scripts\Quadratic equation.js" />
+    <Content Include="6. Quadratic equation\styles\Quadratic equation.css">
+      <DependentUpon>Quadratic equation.scss</DependentUpon>
+    </Content>
+    <Content Include="6. Quadratic equation\styles\Quadratic equation.min.css">
+      <DependentUpon>Quadratic equation.css</DependentUpon>
+    </Content>
+    <Content Include="7. The biggest of five numbers\scripts\The biggest of five numbers.js" />
+    <Content Include="7. The biggest of five numbers\The biggest of five numbers.html" />
+    <Content Include="8. Number as words\Number as words.html" />
+    <Content Include="8. Number as words\scripts\Number as words.js" />
+    <Content Include="js-console-script\js-console.js" />
+    <Content Include="js-console-style\js-console.min.css">
+      <DependentUpon>js-console.css</DependentUpon>
+    </Content>
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2018</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:2018/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

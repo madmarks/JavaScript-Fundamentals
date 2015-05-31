@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Problem 2. Multiplication Sign</title>
+    <link href="styles/Multiplication Sign.css" rel="stylesheet" />
+    <link href="../js-console-style/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <h1>Conditional statements</h1>
+        <h2>Problem 2. Multiplication Sign</h2>
+        <ul>
+            <li>Write a script that shows the sign (+, - or 0) of the product of three real numbers, without calculating it.</li>
+            <li>Use a sequence of if operators.</li>
+        </ul>
+    </header>
+    <section id="input-section">
+        <label for="varA">a:</label>
+        <input type="text" id="varA" />
+        <label for="varB">b:</label>
+        <input type="text" id="varB" />
+        <label for="varC">c:</label>
+        <input type="text" id="varC" />
+        <button id="check" onclick="multiplicationSign()">Check</button>
+        <button id="clear" onclick="jsConsole.clearConsole()">Clear</button>
+    </section>
+    <section id="console">
+        <div id="js-console"></div>
+    </section>
+    <script src="../js-console-script/js-console.js"></script>
+    <script src="scripts/Multiplication Sign.js"></script>
+</body>
+</html>
