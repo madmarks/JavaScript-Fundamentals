@@ -8,29 +8,34 @@ body {
         text-align: center;
         color: black;
 
-        & > ul{
-            font-size:1.3rem;
-            margin-top:15px;
-            margin-bottom:35px;
-            list-style:none;
+        & > ul {
+            font-size: 1.3rem;
+            margin-top: 15px;
+            margin-bottom: 35px;
+            list-style: none;
         }
     }
 
-    #input-section{
-        margin-left:5px;
-        
+    #input-section {
+        margin-left: 5px;
+
+        #input {
+            text-align:right;
+        }
+
         #check {
             border-radius: 5px;
-            margin-left:10px;
+            margin-left: 10px;
         }
+
         #clear {
             border-radius: 5px;
-            margin-left:10px;
+            margin-left: 10px;
         }
     }
 
     #console {
-        margin-top:15px;
-        margin-left:5px;
+        margin-top: 15px;
+        margin-left: 5px;
     }
 }

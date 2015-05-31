@@ -20,7 +20,12 @@ body {
         margin-left:5px;
 
         #width {
-            margin-right:10px;
+            margin-right:10px;          
+            text-align: right;
+        }
+
+        #height {       
+            text-align: right;
         }
         
         #check {

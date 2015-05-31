@@ -12,6 +12,8 @@ body header {
     list-style: none; }
 body #input-section {
   margin-left: 5px; }
+  body #input-section #input {
+    text-align: right; }
   body #input-section #check {
     border-radius: 5px;
     margin-left: 10px; }

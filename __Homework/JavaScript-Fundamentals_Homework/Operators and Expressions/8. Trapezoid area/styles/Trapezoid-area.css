@@ -13,11 +13,14 @@ body header {
 body #input-section {
   margin-left: 5px; }
   body #input-section #side-a {
-    margin-right: 10px; }
+    margin-right: 10px;
+    text-align: right; }
   body #input-section #side-b {
-    margin-right: 10px; }
+    margin-right: 10px;
+    text-align: right; }
   body #input-section #heigh-h {
-    margin-right: 10px; }
+    margin-right: 10px;
+    text-align: right; }
   body #input-section #check {
     border-radius: 5px;
     margin-left: 10px; }

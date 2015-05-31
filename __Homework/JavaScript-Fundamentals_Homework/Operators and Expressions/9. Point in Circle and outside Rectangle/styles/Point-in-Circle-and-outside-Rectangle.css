@@ -13,9 +13,11 @@ body header {
 body #input-section {
   margin-left: 5px; }
   body #input-section #pointX {
-    margin-right: 10px; }
+    margin-right: 10px;
+    text-align: right; }
   body #input-section #pointY {
-    margin-right: 10px; }
+    margin-right: 10px;
+    text-align: right; }
   body #input-section #check {
     border-radius: 5px;
     margin-left: 10px; }
