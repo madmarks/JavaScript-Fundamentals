@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Problem 7. Binary search</title>
+    <link href="styles/Binary search.css" rel="stylesheet" />
+    <link href="../js-console-style/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <h1>Arrays</h1>
+        <h2>Problem 7. Binary search</h2>
+        <ul>
+            <li>Write a script that finds the index of given element in a sorted array of integers by using the binary search algorithm.</li>
+        </ul>
+    </header>
+    <section id="input-section">
+        <label for="arr">Integer Array :</label>
+        <input type="text" id="arr" value="10, 12, 11, 3, 2, 5, 4, 1, 9, 7, 6, 8" />
+        <br />
+        <label for="element">Element :</label>
+        <input type="text" id="element" value="3" />
+        <button id="check" onclick="binarySearchIndexOfElement()">Search Index of Element</button>
+        <button id="clear" onclick="jsConsole.clearConsole()">Clear Console</button>
+    </section>
+    <section id="console">
+        <div id="js-console"></div>
+    </section>
+    <script src="../js-console-script/js-console.js"></script>
+    <script src="scripts/Binary search.js"></script>
+</body>
+</html>

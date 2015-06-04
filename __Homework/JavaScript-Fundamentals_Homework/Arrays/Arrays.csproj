@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{51CDD1DC-6230-49C9-8166-B054A7BF31A7}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Arrays</RootNamespace>
+    <AssemblyName>Arrays</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="js-console-script\js-console.js" />
+    <Content Include="js-console-style\js-console.css">
+      <DependentUpon>js-console.less</DependentUpon>
+    </Content>
+    <Content Include="js-console-style\js-console.min.css">
+      <DependentUpon>js-console.css</DependentUpon>
+    </Content>
+    <Content Include="Problem 1. Increase array members\styles\Increase array members.css">
+      <DependentUpon>Increase array members.scss</DependentUpon>
+    </Content>
+    <Content Include="Problem 1. Increase array members\styles\Increase array members.min.css">
+      <DependentUpon>Increase array members.css</DependentUpon>
+    </Content>
+    <Content Include="Problem 2. Lexicographically comparison\styles\Lexicographically comparison.css">
+      <DependentUpon>Lexicographically comparison.scss</DependentUpon>
+    </Content>
+    <Content Include="Problem 2. Lexicographically comparison\styles\Lexicographically comparison.min.css">
+      <DependentUpon>Lexicographically comparison.css</DependentUpon>
+    </Content>
+    <Content Include="Problem 3. Maximal sequence\styles\Maximal sequence.css">
+      <DependentUpon>Maximal sequence.scss</DependentUpon>
+    </Content>
+    <Content Include="Problem 3. Maximal sequence\styles\Maximal sequence.min.css">
+      <DependentUpon>Maximal sequence.css</DependentUpon>
+    </Content>
+    <Content Include="Problem 4. Maximal increasing sequence\styles\Maximal increasing sequence.css">
+      <DependentUpon>Maximal increasing sequence.scss</DependentUpon>
+    </Content>
+    <Content Include="Problem 4. Maximal increasing sequence\styles\Maximal increasing sequence.min.css">
+      <DependentUpon>Maximal increasing sequence.css</DependentUpon>
+    </Content>
+    <Content Include="Problem 5. Selection sort\styles\Selection sort.css">
+      <DependentUpon>Selection sort.scss</DependentUpon>
+    </Content>
+    <Content Include="Problem 5. Selection sort\styles\Selection sort.min.css">
+      <DependentUpon>Selection sort.css</DependentUpon>
+    </Content>
+    <Content Include="Problem 6. Most frequent number\styles\Most frequent number.css">
+      <DependentUpon>Most frequent number.scss</DependentUpon>
+    </Content>
+    <Content Include="Problem 6. Most frequent number\styles\Most frequent number.min.css">
+      <DependentUpon>Most frequent number.css</DependentUpon>
+    </Content>
+    <Content Include="Problem 7. Binary search\styles\Binary search.css">
+      <DependentUpon>Binary search.scss</DependentUpon>
+    </Content>
+    <Content Include="Problem 7. Binary search\styles\Binary search.min.css">
+      <DependentUpon>Binary search.css</DependentUpon>
+    </Content>
+    <Content Include="Problem 7. Binary search\styles\Binary search.scss" />
+    <Content Include="Problem 6. Most frequent number\styles\Most frequent number.scss" />
+    <Content Include="Problem 5. Selection sort\styles\Selection sort.scss" />
+    <Content Include="Problem 4. Maximal increasing sequence\styles\Maximal increasing sequence.scss" />
+    <Content Include="Problem 3. Maximal sequence\styles\Maximal sequence.scss" />
+    <Content Include="Problem 2. Lexicographically comparison\styles\Lexicographically comparison.scss" />
+    <Content Include="Problem 1. Increase array members\styles\Increase array members.scss" />
+    <Content Include="Problem 1. Increase array members\styles\Increase array members.css.map">
+      <DependentUpon>Increase array members.css</DependentUpon>
+    </Content>
+    <Content Include="js-console-style\js-console.less" />
+    <Content Include="js-console-style\js-console.css.map">
+      <DependentUpon>js-console.css</DependentUpon>
+    </Content>
+    <Content Include="Problem 2. Lexicographically comparison\styles\Lexicographically comparison.css.map">
+      <DependentUpon>Lexicographically comparison.css</DependentUpon>
+    </Content>
+    <Content Include="Problem 3. Maximal sequence\styles\Maximal sequence.css.map">
+      <DependentUpon>Maximal sequence.css</DependentUpon>
+    </Content>
+    <Content Include="Problem 4. Maximal increasing sequence\styles\Maximal increasing sequence.css.map">
+      <DependentUpon>Maximal increasing sequence.css</DependentUpon>
+    </Content>
+    <Content Include="Problem 5. Selection sort\styles\Selection sort.css.map">
+      <DependentUpon>Selection sort.css</DependentUpon>
+    </Content>
+    <Content Include="Problem 6. Most frequent number\styles\Most frequent number.css.map">
+      <DependentUpon>Most frequent number.css</DependentUpon>
+    </Content>
+    <Content Include="Problem 7. Binary search\styles\Binary search.css.map">
+      <DependentUpon>Binary search.css</DependentUpon>
+    </Content>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Problem 1. Increase array members\Increase array members.html" />
+    <Content Include="Problem 1. Increase array members\scripts\Increase array members.js" />
+    <Content Include="Problem 2. Lexicographically comparison\Lexicographically comparison.html" />
+    <Content Include="Problem 2. Lexicographically comparison\scripts\Lexicographically comparison.js" />
+    <Content Include="Problem 3. Maximal sequence\Maximal sequence.html" />
+    <Content Include="Problem 3. Maximal sequence\scripts\Maximal sequence.js" />
+    <Content Include="Problem 4. Maximal increasing sequence\Maximal increasing sequence.html" />
+    <Content Include="Problem 4. Maximal increasing sequence\scripts\Maximal increasing sequence.js" />
+    <Content Include="Problem 5. Selection sort\scripts\Selection sort.js" />
+    <Content Include="Problem 5. Selection sort\Selection sort.html" />
+    <Content Include="Problem 6. Most frequent number\Most frequent number.html" />
+    <Content Include="Problem 6. Most frequent number\scripts\Most frequent number.js" />
+    <Content Include="Problem 7. Binary search\Binary search.html" />
+    <Content Include="Problem 7. Binary search\scripts\Binary search.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>35234</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:35234/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,32 @@
+﻿body, header, section, div, ul, span, table {
+  margin: 0;
+  padding: 0; }
+
+body header {
+  text-align: center;
+  color: black; }
+  body header > ul {
+    font-size: 1.3rem;
+    margin-top: 15px;
+    margin-bottom: 35px;
+    list-style: none; }
+  body header > span {
+    font-size: 1.2rem;
+    font-style: italic; }
+body #input-section {
+  margin-left: 5px; }
+  body #input-section #arr {
+    margin-right: 10px;
+    text-align: right;
+    width: 300px; }
+  body #input-section #check {
+    border-radius: 5px;
+    margin-left: 10px; }
+  body #input-section #clear {
+    border-radius: 5px;
+    margin-left: 10px; }
+body #console {
+  margin-top: 15px;
+  margin-left: 5px; }
+
+/*# sourceMappingURL=Selection sort.css.map */

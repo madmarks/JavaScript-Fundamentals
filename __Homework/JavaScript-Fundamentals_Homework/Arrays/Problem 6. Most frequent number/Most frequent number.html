@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Problem 6. Most frequent number</title>
+    <link href="styles/Most frequent number.css" rel="stylesheet" />
+    <link href="../js-console-style/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <h1>Arrays</h1>
+        <h2>Problem 6. Most frequent number</h2>
+        <ul>
+            <li>Write a script that finds the most frequent number in an array. </li>
+        </ul>
+        <span>Example:</span>
+        <table>
+            <thead>
+                <tr>
+                    <td>input</td>
+                    <td>result</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span>4</span>, 1, 1, <span>4</span>, 2, 3, <span>4</span>, <span>4</span>, 1, 2, <span>4</span>, 9, 3</td>
+                    <td>4 (5 times)</td>
+                </tr>
+            </tbody>
+        </table>
+    </header>
+    <section id="input-section">
+        <label for="arr">Array:</label>
+        <input type="text" id="arr" value="4, 1, 1, 4, 2, 3, 4, 4, 1, 2, 4, 9, 3" />
+        <button id="check" onclick="mostFrequentNumber()">Most Frequent Number</button>
+        <button id="clear" onclick="jsConsole.clearConsole()">Clear Console</button>
+    </section>
+    <section id="console">
+        <div id="js-console"></div>
+    </section>
+    <script src="../js-console-script/js-console.js"></script>
+    <script src="scripts/Most frequent number.js"></script>
+</body>
+</html>
