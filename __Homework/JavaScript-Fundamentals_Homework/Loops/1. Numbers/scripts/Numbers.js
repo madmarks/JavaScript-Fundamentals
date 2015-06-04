@@ -2,11 +2,14 @@
 //
 // Write a script that prints all the numbers from 1 to N.
 
+
+/* global jsConsole */
+
 function printNumbers() {
 
     var number = jsConsole.readInteger('#number');
 
-    // check for a remainder (if someone mistakenly put a float number)
+    /* check for a remainder (if someone mistakenly put a float number) */
     var remainder = jsConsole.read('#number') % 1;
 
     if (!isNaN(number) && !remainder) {
