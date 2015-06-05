@@ -14,10 +14,9 @@
 		consoleElement.appendChild(textArea);
 
 		self.write = function jsConsoleWrite(text) {
-			var textLine = document.createElement("span");
-			if (text !== "" && text !== undefined) {
-				var toWrite = text.toString();
-				textLine.innerHTML = toWrite;
+			if(text !== undefined && text !== ""){
+				var textLine = document.createElement("span");
+				textLine.innerHTML = text;
 				textArea.appendChild(textLine);
 				consoleElement.scrollTop = consoleElement.scrollHeight;
 			}
@@ -39,7 +38,7 @@
 
 		self.readInteger = function readInteger(inputSelector) {
 			var text = self.read(inputSelector);
-			return parseInt(text, 10);
+			return parseInt(text);
 		};
 
 		self.readFloat = function readFloat(inputSelector) {
@@ -47,9 +46,24 @@
 			return parseFloat(text);
 		};
 
+		self.readArray = function readArray(inputSelector,separator) {
+			var text = self.read(inputSelector);
+			var array = text.split(separator);
+			return array;
+		};
+
+		self.readNumbersArray = function readNumbersArray(inputSelector, separator) {
+			var array = self.readArray(inputSelector, separator);
+			var numbers = new Array(array.length);
+			for (var i = 0; i < array.length; i++) {
+				numbers[i] = parseFloat(array[i]);
+			}
+			return numbers;
+		};
+
 		self.clearConsole = function clearConsole() {
 		    textArea.innerHTML = "";
-		}
+		};
 
 		return self;
 	}
