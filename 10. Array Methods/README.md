@@ -1,8 +1,8 @@
-Using Objects
+Array Methods
 =============
 
 ### Problem 1. Make person
-*	Write a functio for creating persons.
+*	Write a function for creating persons.
 	*	Each person must have **firstname**, **lastname**, **age** and **gender** (true is female, false is male)
 * 	Generate an array with ten person with different names, ages and genders
 
@@ -24,3 +24,24 @@ Using Objects
 *	Write a function that finds the youngest male person in a given array of people and prints his full name
 	*	Use **only array methods** and no regular loops (for, while)
 	*	Use **Array#find**
+
+### Problem 6. Group people
+*   Write a function that groups an array of persons by first letter of first name and returns the groups as a JavaScript Object
+    *   Use **Array#reduce**
+    *   Use **only array methods** and no regular loops (for, while)
+
+_Example:_
+
+        result = {
+            'a': [{
+                firstname: 'Asen',
+                /* ... */
+            }, {
+                firstname: 'Anakonda',
+                /* ... */
+            }],
+            'j': [{
+                firstname: 'John',
+                /* ... */
+            }]
+        };
