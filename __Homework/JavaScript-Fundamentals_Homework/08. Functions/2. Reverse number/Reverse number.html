@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Problem 2. Reverse number</title>
+    <link href="styles/Reverse number.css" rel="stylesheet" />
+    <link href="../js-console-style/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <h1>Functions</h1>
+        <h2>Problem 2. Reverse number</h2>
+        <ul>
+            <li>Write a function that reverses the digits of given decimal number.</li>
+        </ul>
+        <span>Example:</span>
+        <table>
+            <thead>
+                <tr>
+                    <td><span>input</span></td>
+                    <td><span>output</span></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>256</td>
+                    <td>652</td>
+                </tr>
+                <tr>
+                    <td>123.45</td>
+                    <td>54.321</td>
+                </tr>
+            </tbody>
+        </table>
+    </header>
+    <section id="input-section">
+        <label for="tb-number">Integer Number:</label>
+        <input type="text" id="tb-number" />
+        <button id="check" onclick="printReversedNumber()">Check</button>
+        <button id="clear" onclick="jsConsole.clearConsole()">Clear</button>
+    </section>
+    <section id="console">
+        <div id="js-console"></div>
+    </section>
+    <script src="../js-console-script/js-console.js"></script>
+    <script src="scripts/Reverse number.js"></script>
+</body>
+</html>

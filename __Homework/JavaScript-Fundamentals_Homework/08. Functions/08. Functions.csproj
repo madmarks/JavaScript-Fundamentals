@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B7BB3AF4-A006-4332-932C-BC05493129DF}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>_08.Functions</RootNamespace>
+    <AssemblyName>_08.Functions</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1. English digit\styles\English digit.css">
+      <DependentUpon>English digit.scss</DependentUpon>
+    </Content>
+    <Content Include="1. English digit\styles\English digit.min.css">
+      <DependentUpon>English digit.css</DependentUpon>
+    </Content>
+    <Content Include="2. Reverse number\styles\Reverse number.css">
+      <DependentUpon>Reverse number.scss</DependentUpon>
+    </Content>
+    <Content Include="2. Reverse number\styles\Reverse number.min.css">
+      <DependentUpon>Reverse number.css</DependentUpon>
+    </Content>
+    <Content Include="3. Occurrences of word\styles\Occurrences of word.css">
+      <DependentUpon>Occurrences of word.scss</DependentUpon>
+    </Content>
+    <Content Include="3. Occurrences of word\styles\Occurrences of word.min.css">
+      <DependentUpon>Occurrences of word.css</DependentUpon>
+    </Content>
+    <Content Include="4. Number of elements\styles\Number of elements.css">
+      <DependentUpon>Number of elements.scss</DependentUpon>
+    </Content>
+    <Content Include="4. Number of elements\styles\Number of elements.min.css">
+      <DependentUpon>Number of elements.css</DependentUpon>
+    </Content>
+    <Content Include="5. Appearance count\styles\Appearance count.css">
+      <DependentUpon>Appearance count.scss</DependentUpon>
+    </Content>
+    <Content Include="5. Appearance count\styles\Appearance count.min.css">
+      <DependentUpon>Appearance count.css</DependentUpon>
+    </Content>
+    <Content Include="6. Larger than neighbours\styles\Larger than neighbours.css">
+      <DependentUpon>Larger than neighbours.scss</DependentUpon>
+    </Content>
+    <Content Include="6. Larger than neighbours\styles\Larger than neighbours.min.css">
+      <DependentUpon>Larger than neighbours.css</DependentUpon>
+    </Content>
+    <Content Include="7. First larger than neighbours\styles\First larger than neighbours.css">
+      <DependentUpon>First larger than neighbours.scss</DependentUpon>
+    </Content>
+    <Content Include="7. First larger than neighbours\styles\First larger than neighbours.min.css">
+      <DependentUpon>First larger than neighbours.css</DependentUpon>
+    </Content>
+    <Content Include="js-console-style\js-console.css">
+      <DependentUpon>js-console.less</DependentUpon>
+    </Content>
+    <Content Include="js-console-style\js-console.less" />
+    <Content Include="1. English digit\styles\English digit.scss" />
+    <Content Include="2. Reverse number\styles\Reverse number.scss" />
+    <Content Include="3. Occurrences of word\styles\Occurrences of word.scss" />
+    <Content Include="4. Number of elements\styles\Number of elements.scss" />
+    <Content Include="5. Appearance count\styles\Appearance count.scss" />
+    <Content Include="6. Larger than neighbours\styles\Larger than neighbours.scss" />
+    <Content Include="7. First larger than neighbours\styles\First larger than neighbours.scss" />
+    <Content Include="1. English digit\styles\English digit.css.map">
+      <DependentUpon>English digit.css</DependentUpon>
+    </Content>
+    <Content Include="js-console-style\js-console.css.map">
+      <DependentUpon>js-console.css</DependentUpon>
+    </Content>
+    <Content Include="2. Reverse number\styles\Reverse number.css.map">
+      <DependentUpon>Reverse number.css</DependentUpon>
+    </Content>
+    <Content Include="3. Occurrences of word\styles\Occurrences of word.css.map">
+      <DependentUpon>Occurrences of word.css</DependentUpon>
+    </Content>
+    <Content Include="4. Number of elements\styles\Number of elements.css.map">
+      <DependentUpon>Number of elements.css</DependentUpon>
+    </Content>
+    <Content Include="5. Appearance count\styles\Appearance count.css.map">
+      <DependentUpon>Appearance count.css</DependentUpon>
+    </Content>
+    <Content Include="6. Larger than neighbours\styles\Larger than neighbours.css.map">
+      <DependentUpon>Larger than neighbours.css</DependentUpon>
+    </Content>
+    <Content Include="7. First larger than neighbours\styles\First larger than neighbours.css.map">
+      <DependentUpon>First larger than neighbours.css</DependentUpon>
+    </Content>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1. English digit\English digit.html" />
+    <Content Include="1. English digit\scripts\English digit.js" />
+    <Content Include="2. Reverse number\Reverse number.html" />
+    <Content Include="2. Reverse number\scripts\Reverse number.js" />
+    <Content Include="3. Occurrences of word\Occurrences of word.html" />
+    <Content Include="3. Occurrences of word\scripts\Occurrences of word.js" />
+    <Content Include="4. Number of elements\Number of elements.html" />
+    <Content Include="4. Number of elements\scripts\Number of elements.js" />
+    <Content Include="5. Appearance count\Appearance count.html" />
+    <Content Include="5. Appearance count\scripts\Appearance count.js" />
+    <Content Include="6. Larger than neighbours\Larger than neighbours.html" />
+    <Content Include="6. Larger than neighbours\scripts\Larger than neighbours.js" />
+    <Content Include="7. First larger than neighbours\First larger than neighbours.html" />
+    <Content Include="7. First larger than neighbours\scripts\First larger than neighbours.js" />
+    <Content Include="js-console-script\js-console.js" />
+    <Content Include="js-console-style\js-console.min.css">
+      <DependentUpon>js-console.css</DependentUpon>
+    </Content>
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>20795</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:20795/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

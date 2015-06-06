@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Problem 3. Occurrences of word</title>
+    <link href="styles/Occurrences of word.css" rel="stylesheet" />
+    <link href="../js-console-style/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <h1>Functions</h1>
+        <h2>Problem 3. Occurrences of word</h2>
+        <ul>
+            <li>Write a function that finds all the occurrences of word in a text.</li>
+            <li>The search can be case sensitive or case insensitive.</li>
+            <li>Use function overloading.</li>
+        </ul>
+    </header>
+    <section id="input-section">
+        <label for="tb-text">Text:</label>
+        <input type="text" id="tb-text" value="Kiwi,  Banana, Orange, banana  Apple , Mango kiwi apple banana orange mango Mango APPLE ." />
+        <br />
+        <label for="tb-word">Word:</label>
+        <input type="text" id="tb-word" value="Apple" />
+        <button id="check" onclick="printNumberOfWordOccurrences()">Go</button>
+        <button id="clear" onclick="jsConsole.clearConsole()">Clear Console</button>   
+    </section>
+    <section id="console">
+        <div id="js-console"></div>
+    </section>
+    <script src="../js-console-script/js-console.js"></script>
+    <script src="scripts/Occurrences of word.js"></script>
+</body>
+</html>

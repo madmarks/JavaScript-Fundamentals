@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Problem 5. Appearance count</title>
+    <link href="styles/Appearance count.css" rel="stylesheet" />
+    <link href="../js-console-style/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <h1>Functions</h1>
+        <h2>Problem 5. Appearance count</h2>
+        <ul>
+            <li>Write a function that counts how many times given number appears in given array.</li>
+            <li>Write a test function to check if the function is working correctly.</li>
+        </ul>
+    </header>
+    <section id="input-section">
+        <label for="tb-array">Array :</label>
+        <input type="text" id="tb-array" value="4, 1.05, 1, 4, 2, 3, 4, 4, 1, 2, 4, 9, 3, 7, 5, 3, 1.05, 8" />
+        <br />
+        <label for="tb-number">Number :</label>
+        <input type="text" id="tb-number" value="1" />
+        <button id="check" onclick="printResult()">Check</button>
+        <button id="clear" onclick="jsConsole.clearConsole()">Clear Console</button>
+    </section>
+    <section id="console">
+        <div id="js-console"></div>
+    </section>
+    <script src="../js-console-script/js-console.js"></script>
+    <script src="scripts/Appearance count.js"></script>
+</body>
+</html>

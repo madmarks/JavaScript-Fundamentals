@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Problem 6. Larger than neighbours</title>
+    <link href="styles/Larger than neighbours.css" rel="stylesheet" />
+    <link href="../js-console-style/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <h1>Functions</h1>
+        <h2>Problem 6. Larger than neighbours</h2>
+        <ul>
+            <li>Write a function that checks if the element at given position in given array of integers is bigger than its two neighbours (when such exist).</li>
+        </ul>
+    </header>
+    <section id="input-section">
+        <label for="tb-array">Integers Array :</label>
+        <input type="text" id="tb-array" value="4, 1, 6, 4, 2, 3, 4, 4, 1, 5, 4, 9, 3, 7, 5, 3, 1, 8" />
+        <br />
+        <label for="tb-index">Index :</label>
+        <input type="text" id="tb-index" value="2" />
+        <button id="check" onclick="printResult()">Check</button>
+        <button id="clear" onclick="jsConsole.clearConsole()">Clear Console</button>
+    </section>
+    <section id="console">
+        <div id="js-console"></div>
+    </section>
+    <script src="../js-console-script/js-console.js"></script>
+    <script src="scripts/Larger than neighbours.js"></script>
+</body>
+</html>

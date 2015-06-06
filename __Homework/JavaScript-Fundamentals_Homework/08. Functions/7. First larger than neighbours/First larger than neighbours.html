@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Problem 7. First larger than neighbours</title>
+    <link href="styles/First larger than neighbours.css" rel="stylesheet" />
+    <link href="../js-console-style/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <h1>Functions</h1>
+        <h2>Problem 7. First larger than neighbours</h2>
+        <ul>
+            <li>Write a function that returns the index of the first element in array that is larger than its neighbours or -1, if there’s no such element.</li>
+            <li>Use the function from the previous exercise.</li>
+        </ul>
+    </header>
+    <section id="input-section">
+        <label for="tb-array">Integers Array :</label>
+        <input type="text" id="tb-array" value="4, 1, 6, 4, 2, 3, 4, 4, 1, 5, 4, 9, 3, 7, 5, 3, 1, 8" />
+        <button id="check" onclick="printResult()">Find First Larger</button>
+        <button id="clear" onclick="jsConsole.clearConsole()">Clear Console</button>
+    </section>
+    <section id="console">
+        <div id="js-console"></div>
+    </section>
+    <script src="../js-console-script/js-console.js"></script>
+    <script src="scripts/First larger than neighbours.js"></script>
+</body>
+</html>

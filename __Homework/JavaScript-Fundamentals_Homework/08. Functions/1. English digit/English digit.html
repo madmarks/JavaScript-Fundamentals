@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Problem 1. English digit</title>
+    <link href="styles/English digit.css" rel="stylesheet" />
+    <link href="../js-console-style/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <h1>Functions</h1>
+        <h2>Problem 1. English digit</h2>
+        <ul>
+            <li>Write a function that returns the last digit of given integer as an English word.</li>
+        </ul>
+        <span>Example:</span>
+        <table>
+            <thead>
+                <tr>
+                    <td><span>input</span></td>
+                    <td><span>output</span></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>512</td>
+                    <td>two</td>
+                </tr>
+                <tr>
+                    <td>1024</td>
+                    <td>four</td>
+                </tr>
+                <tr>
+                    <td>12309</td>
+                    <td>nine</td>
+                </tr>
+            </tbody>
+        </table>
+    </header>
+    <section id="input-section">
+        <label for="tb-number">Integer Number:</label>
+        <input type="text" id="tb-number" />
+        <button id="check" onclick="printLastDigitAsWord()">Check</button>
+        <button id="clear" onclick="jsConsole.clearConsole()">Clear</button>
+    </section>
+    <section id="console">
+        <div id="js-console"></div>
+    </section>
+    <script src="../js-console-script/js-console.js"></script>
+    <script src="scripts/English digit.js"></script>
+</body>
+</html>
