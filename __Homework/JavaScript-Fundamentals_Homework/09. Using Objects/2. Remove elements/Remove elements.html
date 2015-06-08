@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Problem 2. Remove elements</title>
+    <link href="styles/Remove elements.css" rel="stylesheet" />
+    <link href="../js-console-style/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <h1>Using Objects</h1>
+        <h2>Problem 2. Remove elements</h2>
+        <ul>
+            <li>Write a function that removes all elements with a given value.</li>
+            <li>Attach it to the array type.</li>
+            <li>
+                <p>Read about <strong>prototype</strong> and how to attach methods.</p>
+                <pre>
+                <code>var arr = [1,2,1,4,1,3,4,1,111,3,2,1,'1']; 
+                arr.remove(1); //arr = [2,4,3,4,111,3,2,'1'];</code>
+                </pre>
+            </li>
+        </ul>
+    </header>
+    <section id="input-section">
+        <button id="check" onclick="removeAllWithGivenValue()">Remove</button>
+        <button id="clear" onclick="jsConsole.clearConsole()">Clear Console</button>
+    </section>
+    <section id="console">
+        <div id="js-console"></div>
+    </section>
+    <script src="../js-console-script/js-console.js"></script>
+    <script src="scripts/Remove elements.js"></script>
+</body>
+</html>

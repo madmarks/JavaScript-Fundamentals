@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Problem 6.</title>
+    <link href="styles/6.css" rel="stylesheet" />
+    <link href="../js-console-style/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <h1>Using Objects</h1>
+        <h2>Problem 6.</h2>
+        <ul>
+            <li>Write a function that groups an array of people by age, first or last name.</li>
+            <li>The function must return an associative array, with keys - the groups, and values - arrays with people in this groups</li>
+            <li>
+                Use function overloading (i.e. just one function)
+                <br />
+                <br />
+                <em>Example:</em>
+                <pre>
+            <code>var people = {…};
+            var groupedByFname = group(people, 'firstname');
+            var groupedByAge= group(people, 'age');</code></pre>
+            </li>
+        </ul>
+    </header>
+    <section id="input-section">
+        <label for="group-by-age">Group People by : </label>
+        <button id="group-by-age" onclick="groupByAge()">Age</button>
+        <button id="group-by-first-name" onclick="groupByFirstName()">First Name</button>
+        <button id="group-by-last-name" onclick="groupByLastName()">Last Name</button>
+        <button id="clear" onclick="jsConsole.clearConsole()">Clear Console</button>
+    </section>
+    <section id="console">
+        <div id="js-console"></div>
+    </section>
+    <script src="../js-console-script/js-console.js"></script>
+    <script src="scripts/6.js"></script>
+</body>
+</html>

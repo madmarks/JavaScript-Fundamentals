@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Problem 5. Youngest person</title>
+    <link href="styles/Youngest person.css" rel="stylesheet" />
+    <link href="../js-console-style/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <h1>Using Objects</h1>
+        <h2>Problem 5. Youngest person</h2>
+        <ul>
+            <li>Write a function that finds the youngest person in a given array of people and prints his/hers full name</li>
+            <li>
+                Each person has properties firstname, lastname and age.
+                <br/>
+                <br />
+                <em>Example:</em>
+                <pre>
+        <code>var people = [
+            { firstname : 'Gosho', lastname: 'Petrov', age: 32 }, 
+            { firstname : 'Bay', lastname: 'Ivan', age: 81},… ];</code>
+                </pre>
+            </li>
+        </ul>
+    </header>
+    <section id="input-section">
+        <button id="check" onclick="printYoungest()">Find Youngest</button>
+        <button id="clear" onclick="jsConsole.clearConsole()">Clear Console</button>
+    </section>
+    <section id="console">
+        <div id="js-console"></div>
+    </section>
+    <script src="../js-console-script/js-console.js"></script>
+    <script src="scripts/Youngest person.js"></script>
+</body>
+</html>

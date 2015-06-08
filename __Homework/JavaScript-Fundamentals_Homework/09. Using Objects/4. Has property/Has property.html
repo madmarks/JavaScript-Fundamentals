@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Problem 4. Has property</title>
+    <link href="styles/Has property.css" rel="stylesheet" />
+    <link href="../js-console-style/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <h1>Using Objects</h1>
+        <h2>Problem 4. Has property</h2>
+        <ul>
+            <li>
+                Write a function that checks if a given object contains a given property.<pre>
+                <code>var obj  = …;
+                var hasProp = hasProperty(obj, 'length');</code></pre>
+            </li>
+        </ul>
+    </header>
+    <section id="input-section">
+        <label for="tb-property">Property:</label>
+        <input type="text" id="tb-property" value="length" />
+        <button id="check" onclick="checkForProperty()">Check</button>
+        <button id="clear" onclick="jsConsole.clearConsole()">Clear Console</button>
+    </section>
+    <section id="console">
+        <div id="js-console"></div>
+    </section>
+    <script src="../js-console-script/js-console.js"></script>
+    <script src="scripts/Has property.js"></script>
+</body>
+</html>

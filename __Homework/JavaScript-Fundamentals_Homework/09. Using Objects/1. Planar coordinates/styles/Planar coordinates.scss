@@ -1,0 +1,72 @@
+﻿body, header, section, div, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    header {
+        text-align: center;
+        color: black;
+
+        & > ul {
+            text-align: left;
+            font-size: 1.3rem;
+            margin-left:40px;
+            margin-top: 15px;
+            margin-bottom: 35px;
+
+            & li > ul {
+                margin-left:40px;
+            }
+        }
+    }
+
+    #input-section {
+        margin-left: 15px;
+
+        #tb-pointA {
+            margin-right:20px;
+            text-align: right;
+            width:50px;
+        }
+
+        #tb-pointB {
+            margin-right:20px;
+            text-align: right;
+            width:50px;
+        }
+
+        #tb-pointC {
+            margin-right:20px;
+            text-align: right;
+            width:50px;
+        }
+        #tb-pointD {
+            margin-right:20px;
+            text-align: right;
+            width:50px;
+        }
+
+        #tb-pointE {
+            margin-right:20px;
+            text-align: right;
+            width:50px;
+        }
+
+        #check {
+            margin-top:15px;
+            border-radius: 5px;
+        }
+
+        #clear {
+            margin-top:15px;
+            border-radius: 5px;
+            margin-left: 10px;
+        }
+    }
+
+    #console {
+        margin-top: 15px;
+        margin-left: 5px;
+    }
+}
