@@ -64,78 +64,78 @@
     <Content Include="js-console-style\js-console.min.css">
       <DependentUpon>js-console.css</DependentUpon>
     </Content>
-    <Content Include="Problem 1. Increase array members\styles\Increase array members.css">
+    <Content Include="1. Increase array members\styles\Increase array members.css">
       <DependentUpon>Increase array members.scss</DependentUpon>
     </Content>
-    <Content Include="Problem 1. Increase array members\styles\Increase array members.min.css">
+    <Content Include="1. Increase array members\styles\Increase array members.min.css">
       <DependentUpon>Increase array members.css</DependentUpon>
     </Content>
-    <Content Include="Problem 2. Lexicographically comparison\styles\Lexicographically comparison.css">
+    <Content Include="2. Lexicographically comparison\styles\Lexicographically comparison.css">
       <DependentUpon>Lexicographically comparison.scss</DependentUpon>
     </Content>
-    <Content Include="Problem 2. Lexicographically comparison\styles\Lexicographically comparison.min.css">
+    <Content Include="2. Lexicographically comparison\styles\Lexicographically comparison.min.css">
       <DependentUpon>Lexicographically comparison.css</DependentUpon>
     </Content>
-    <Content Include="Problem 3. Maximal sequence\styles\Maximal sequence.css">
+    <Content Include="3. Maximal sequence\styles\Maximal sequence.css">
       <DependentUpon>Maximal sequence.scss</DependentUpon>
     </Content>
-    <Content Include="Problem 3. Maximal sequence\styles\Maximal sequence.min.css">
+    <Content Include="3. Maximal sequence\styles\Maximal sequence.min.css">
       <DependentUpon>Maximal sequence.css</DependentUpon>
     </Content>
-    <Content Include="Problem 4. Maximal increasing sequence\styles\Maximal increasing sequence.css">
+    <Content Include="4. Maximal increasing sequence\styles\Maximal increasing sequence.css">
       <DependentUpon>Maximal increasing sequence.scss</DependentUpon>
     </Content>
-    <Content Include="Problem 4. Maximal increasing sequence\styles\Maximal increasing sequence.min.css">
+    <Content Include="4. Maximal increasing sequence\styles\Maximal increasing sequence.min.css">
       <DependentUpon>Maximal increasing sequence.css</DependentUpon>
     </Content>
-    <Content Include="Problem 5. Selection sort\styles\Selection sort.css">
+    <Content Include="5. Selection sort\styles\Selection sort.css">
       <DependentUpon>Selection sort.scss</DependentUpon>
     </Content>
-    <Content Include="Problem 5. Selection sort\styles\Selection sort.min.css">
+    <Content Include="5. Selection sort\styles\Selection sort.min.css">
       <DependentUpon>Selection sort.css</DependentUpon>
     </Content>
-    <Content Include="Problem 6. Most frequent number\styles\Most frequent number.css">
+    <Content Include="6. Most frequent number\styles\Most frequent number.css">
       <DependentUpon>Most frequent number.scss</DependentUpon>
     </Content>
-    <Content Include="Problem 6. Most frequent number\styles\Most frequent number.min.css">
+    <Content Include="6. Most frequent number\styles\Most frequent number.min.css">
       <DependentUpon>Most frequent number.css</DependentUpon>
     </Content>
-    <Content Include="Problem 7. Binary search\styles\Binary search.css">
+    <Content Include="7. Binary search\styles\Binary search.css">
       <DependentUpon>Binary search.scss</DependentUpon>
     </Content>
-    <Content Include="Problem 7. Binary search\styles\Binary search.min.css">
+    <Content Include="7. Binary search\styles\Binary search.min.css">
       <DependentUpon>Binary search.css</DependentUpon>
     </Content>
-    <Content Include="Problem 7. Binary search\styles\Binary search.scss" />
-    <Content Include="Problem 6. Most frequent number\styles\Most frequent number.scss" />
-    <Content Include="Problem 5. Selection sort\styles\Selection sort.scss" />
-    <Content Include="Problem 4. Maximal increasing sequence\styles\Maximal increasing sequence.scss" />
-    <Content Include="Problem 3. Maximal sequence\styles\Maximal sequence.scss" />
-    <Content Include="Problem 2. Lexicographically comparison\styles\Lexicographically comparison.scss" />
-    <Content Include="Problem 1. Increase array members\styles\Increase array members.scss" />
-    <Content Include="Problem 1. Increase array members\styles\Increase array members.css.map">
+    <Content Include="7. Binary search\styles\Binary search.scss" />
+    <Content Include="6. Most frequent number\styles\Most frequent number.scss" />
+    <Content Include="5. Selection sort\styles\Selection sort.scss" />
+    <Content Include="4. Maximal increasing sequence\styles\Maximal increasing sequence.scss" />
+    <Content Include="3. Maximal sequence\styles\Maximal sequence.scss" />
+    <Content Include="2. Lexicographically comparison\styles\Lexicographically comparison.scss" />
+    <Content Include="1. Increase array members\styles\Increase array members.scss" />
+    <Content Include="1. Increase array members\styles\Increase array members.css.map">
       <DependentUpon>Increase array members.css</DependentUpon>
     </Content>
     <Content Include="js-console-style\js-console.less" />
     <Content Include="js-console-style\js-console.css.map">
       <DependentUpon>js-console.css</DependentUpon>
     </Content>
-    <Content Include="Problem 2. Lexicographically comparison\styles\Lexicographically comparison.css.map">
+    <Content Include="2. Lexicographically comparison\styles\Lexicographically comparison.css.map">
       <DependentUpon>Lexicographically comparison.css</DependentUpon>
     </Content>
-    <Content Include="Problem 3. Maximal sequence\styles\Maximal sequence.css.map">
+    <Content Include="3. Maximal sequence\styles\Maximal sequence.css.map">
       <DependentUpon>Maximal sequence.css</DependentUpon>
     </Content>
-    <Content Include="Problem 4. Maximal increasing sequence\styles\Maximal increasing sequence.css.map">
+    <Content Include="4. Maximal increasing sequence\styles\Maximal increasing sequence.css.map">
       <DependentUpon>Maximal increasing sequence.css</DependentUpon>
     </Content>
-    <Content Include="Problem 5. Selection sort\styles\Selection sort.css.map">
+    <Content Include="5. Selection sort\styles\Selection sort.css.map">
       <DependentUpon>Selection sort.css</DependentUpon>
     </Content>
-    <Content Include="Problem 6. Most frequent number\styles\Most frequent number.css.map">
+    <Content Include="6. Most frequent number\styles\Most frequent number.css.map">
       <DependentUpon>Most frequent number.css</DependentUpon>
     </Content>
-    <Content Include="Problem 7. Binary search\styles\Binary search.css.map">
+    <Content Include="7. Binary search\styles\Binary search.css.map">
       <DependentUpon>Binary search.css</DependentUpon>
     </Content>
     <None Include="Web.Debug.config">
@@ -146,20 +146,20 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Problem 1. Increase array members\Increase array members.html" />
-    <Content Include="Problem 1. Increase array members\scripts\Increase array members.js" />
-    <Content Include="Problem 2. Lexicographically comparison\Lexicographically comparison.html" />
-    <Content Include="Problem 2. Lexicographically comparison\scripts\Lexicographically comparison.js" />
-    <Content Include="Problem 3. Maximal sequence\Maximal sequence.html" />
-    <Content Include="Problem 3. Maximal sequence\scripts\Maximal sequence.js" />
-    <Content Include="Problem 4. Maximal increasing sequence\Maximal increasing sequence.html" />
-    <Content Include="Problem 4. Maximal increasing sequence\scripts\Maximal increasing sequence.js" />
-    <Content Include="Problem 5. Selection sort\scripts\Selection sort.js" />
-    <Content Include="Problem 5. Selection sort\Selection sort.html" />
-    <Content Include="Problem 6. Most frequent number\Most frequent number.html" />
-    <Content Include="Problem 6. Most frequent number\scripts\Most frequent number.js" />
-    <Content Include="Problem 7. Binary search\Binary search.html" />
-    <Content Include="Problem 7. Binary search\scripts\Binary search.js" />
+    <Content Include="1. Increase array members\Increase array members.html" />
+    <Content Include="1. Increase array members\scripts\Increase array members.js" />
+    <Content Include="2. Lexicographically comparison\Lexicographically comparison.html" />
+    <Content Include="2. Lexicographically comparison\scripts\Lexicographically comparison.js" />
+    <Content Include="3. Maximal sequence\Maximal sequence.html" />
+    <Content Include="3. Maximal sequence\scripts\Maximal sequence.js" />
+    <Content Include="4. Maximal increasing sequence\Maximal increasing sequence.html" />
+    <Content Include="4. Maximal increasing sequence\scripts\Maximal increasing sequence.js" />
+    <Content Include="5. Selection sort\scripts\Selection sort.js" />
+    <Content Include="5. Selection sort\Selection sort.html" />
+    <Content Include="6. Most frequent number\Most frequent number.html" />
+    <Content Include="6. Most frequent number\scripts\Most frequent number.js" />
+    <Content Include="7. Binary search\Binary search.html" />
+    <Content Include="7. Binary search\scripts\Binary search.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
