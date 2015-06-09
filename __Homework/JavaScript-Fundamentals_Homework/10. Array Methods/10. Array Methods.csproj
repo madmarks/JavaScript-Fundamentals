@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F2728E82-8C9A-4337-8628-7B99C1C04ACD}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>_10.Array_Methods</RootNamespace>
+    <AssemblyName>_10.Array_Methods</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1. Make person\Make person.html" />
+    <Content Include="1. Make person\scripts\Make person.js" />
+    <Content Include="1. Make person\styles\Make person.css">
+      <DependentUpon>Make person.scss</DependentUpon>
+    </Content>
+    <Content Include="1. Make person\styles\Make person.min.css">
+      <DependentUpon>Make person.css</DependentUpon>
+    </Content>
+    <Content Include="2. People of age\People of age.html" />
+    <Content Include="2. People of age\scripts\People of age.js" />
+    <Content Include="2. People of age\styles\People of age.css">
+      <DependentUpon>People of age.scss</DependentUpon>
+    </Content>
+    <Content Include="2. People of age\styles\People of age.min.css">
+      <DependentUpon>People of age.css</DependentUpon>
+    </Content>
+    <Content Include="3. Underage people\scripts\Underage people.js" />
+    <Content Include="3. Underage people\styles\Underage people.css">
+      <DependentUpon>Underage people.scss</DependentUpon>
+    </Content>
+    <Content Include="3. Underage people\styles\Underage people.min.css">
+      <DependentUpon>Underage people.css</DependentUpon>
+    </Content>
+    <Content Include="3. Underage people\Underage people.html" />
+    <Content Include="4. Average age of females\Average age of females.html" />
+    <Content Include="4. Average age of females\scripts\Average age of females.js" />
+    <Content Include="4. Average age of females\styles\Average age of females.css">
+      <DependentUpon>Average age of females.scss</DependentUpon>
+    </Content>
+    <Content Include="4. Average age of females\styles\Average age of females.min.css">
+      <DependentUpon>Average age of females.css</DependentUpon>
+    </Content>
+    <Content Include="5. Youngest person\scripts\Youngest person.js" />
+    <Content Include="5. Youngest person\styles\Youngest person.css">
+      <DependentUpon>Youngest person.scss</DependentUpon>
+    </Content>
+    <Content Include="5. Youngest person\styles\Youngest person.min.css">
+      <DependentUpon>Youngest person.css</DependentUpon>
+    </Content>
+    <Content Include="5. Youngest person\Youngest person.html" />
+    <Content Include="6. Group people\Group people.html" />
+    <Content Include="6. Group people\scripts\Group people.js" />
+    <Content Include="6. Group people\styles\Group people.css">
+      <DependentUpon>Group people.scss</DependentUpon>
+    </Content>
+    <Content Include="6. Group people\styles\Group people.min.css">
+      <DependentUpon>Group people.css</DependentUpon>
+    </Content>
+    <Content Include="js-console-style\js-console.css">
+      <DependentUpon>js-console.less</DependentUpon>
+    </Content>
+    <Content Include="js-console-style\js-console.less" />
+    <Content Include="6. Group people\styles\Group people.scss" />
+    <Content Include="5. Youngest person\styles\Youngest person.scss" />
+    <Content Include="4. Average age of females\styles\Average age of females.scss" />
+    <Content Include="3. Underage people\styles\Underage people.scss" />
+    <Content Include="2. People of age\styles\People of age.scss" />
+    <Content Include="1. Make person\styles\Make person.scss" />
+    <Content Include="js-console-style\js-console.css.map">
+      <DependentUpon>js-console.css</DependentUpon>
+    </Content>
+    <Content Include="1. Make person\styles\Make person.css.map">
+      <DependentUpon>Make person.css</DependentUpon>
+    </Content>
+    <Content Include="2. People of age\styles\People of age.css.map">
+      <DependentUpon>People of age.css</DependentUpon>
+    </Content>
+    <Content Include="3. Underage people\styles\Underage people.css.map">
+      <DependentUpon>Underage people.css</DependentUpon>
+    </Content>
+    <Content Include="4. Average age of females\styles\Average age of females.css.map">
+      <DependentUpon>Average age of females.css</DependentUpon>
+    </Content>
+    <Content Include="5. Youngest person\styles\Youngest person.css.map">
+      <DependentUpon>Youngest person.css</DependentUpon>
+    </Content>
+    <Content Include="6. Group people\styles\Group people.css.map">
+      <DependentUpon>Group people.css</DependentUpon>
+    </Content>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="js-console-script\js-console.js" />
+    <Content Include="js-console-style\js-console.min.css">
+      <DependentUpon>js-console.css</DependentUpon>
+    </Content>
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>19780</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:19780/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

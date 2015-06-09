@@ -1,0 +1,29 @@
+﻿body, header, section, div, ul {
+  margin: 0;
+  padding: 0; }
+
+body header {
+  text-align: center;
+  color: black; }
+  body header > ul {
+    text-align: left;
+    font-size: 1.3rem;
+    margin-left: 40px;
+    margin-top: 15px;
+    margin-bottom: 35px; }
+    body header > ul li > ul {
+      margin-left: 40px; }
+body #input-section {
+  margin-left: 15px; }
+  body #input-section #check {
+    margin-top: 15px;
+    border-radius: 5px; }
+  body #input-section #clear {
+    margin-top: 15px;
+    border-radius: 5px;
+    margin-left: 10px; }
+body #console {
+  margin-top: 15px;
+  margin-left: 5px; }
+
+/*# sourceMappingURL=Youngest person.css.map */

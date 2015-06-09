@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Problem 6. Group people</title>
+    <link href="styles/Group people.css" rel="stylesheet" />
+    <link href="../js-console-style/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <h1>Array Methods</h1>
+        <h2>Problem 6. Group people</h2>
+        <ul>
+            <li>
+                Write a function that groups an array of persons by first letter of first name and returns the groups as a JavaScript Object 
+                <ul>
+                    <li>Use <strong>Array#reduce</strong></li>
+                    <li>
+                        Use <strong>only array methods</strong> and no regular loops (for, while)
+                        <p><em>Example:</em></p>
+
+                        <pre><code>    result = {
+        'a': [{
+            firstname: 'Asen',
+            /* ... */
+        }, {
+            firstname: 'Anakonda',
+            /* ... */
+        }],
+        'j': [{
+            firstname: 'John',
+            /* ... */
+        }]
+    };
+</code></pre>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        
+    </header>
+    <section id="input-section">
+        <button id="check" onclick="print()">Print</button>
+        <button id="clear" onclick="jsConsole.clearConsole()">Clear Console</button>
+    </section>
+    <section id="console">
+        <div id="js-console"></div>
+    </section>
+    <script src="../js-console-script/js-console.js"></script>
+    <script src="scripts/Group people.js"></script>
+</body>
+</html>
