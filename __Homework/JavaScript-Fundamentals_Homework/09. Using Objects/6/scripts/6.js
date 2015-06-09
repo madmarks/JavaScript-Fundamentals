@@ -23,7 +23,8 @@ function groupByAge() {
     var groupedByAge = group(people, 'age');
 
     jsConsole.writeLine('Grouped by age: ');
-    print(groupedByAge);
+    printAssociativeArray(groupedByAge);
+    jsConsole.writeLine('--------------------------------------------------------------');
 }
 
 function groupByFirstName() {
@@ -31,7 +32,8 @@ function groupByFirstName() {
     var groupedByFirstName = group(people, 'firstname');
 
     jsConsole.writeLine('Grouped by First Name: ');
-    print(groupedByFirstName);
+    printAssociativeArray(groupedByFirstName);
+    jsConsole.writeLine('--------------------------------------------------------------');
 }
 
 function groupByLastName() {
@@ -39,22 +41,30 @@ function groupByLastName() {
     var groupedByLastName = group(people, 'lastname');
 
     jsConsole.writeLine('Grouped by Last Name: ');
-    print(groupedByLastName);
+    printAssociativeArray(groupedByLastName);
+    jsConsole.writeLine('--------------------------------------------------------------');
 }
 
-function print(associativeArray) {
+function printAssociativeArray(associativeArray) {
 
-    var key;
+    var key,
+        firstKey = true;
 
     jsConsole.writeLine('{');
 
     for (key in associativeArray) {
 
-        jsConsole.writeLine('"' + key + '" : ' + JSON.stringify(associativeArray[key]) + ',');
+        if (!firstKey) {
+            jsConsole.writeLine(',');
+        } else {
+            firstKey = false;
+        }
+
+        jsConsole.write('"' + key + '" : ' + JSON.stringify(associativeArray[key]));
     }
 
+    jsConsole.writeLine('');
     jsConsole.writeLine('}');
-    jsConsole.writeLine('--------------------------------------------------------------');
 }
 
 function Person(firstname, lastname, age) {
