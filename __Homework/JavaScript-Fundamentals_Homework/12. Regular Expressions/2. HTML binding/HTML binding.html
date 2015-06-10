@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Problem 2. HTML binding</title>
+    <link href="styles/HTML binding.css" rel="stylesheet" />
+    <link href="../js-console-style/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <h1>Regular Expressions</h1>
+        <h2>Problem 2. HTML binding</h2>
+        <ul>
+            <li>
+                Write a function that puts the value of an object into the content/attributes of HTML tags.
+                <ul>
+                    <li>
+                        Add the function to the <strong>String.prototype</strong>
+                        <br />
+                        <br />
+                        <em>Example 1:</em>
+                        <br />
+                        <br />
+                        <strong>input</strong>
+                        <pre>
+<code>var str = '&lt;div data-bind-content="name"&gt;&lt;/div&gt;';
+str.bind(str, {name: 'Steven'});</code></pre>
+                        <strong>output</strong>
+                        <pre>
+<code>&lt;div data-bind-content="name"&gt;Steven&lt;/div&gt;</code></pre>
+                        <br />
+                        <em>Example 2:</em>
+                        <br />
+                        <br />
+                        <strong>input</strong>
+                        <pre>
+<code>var bindingString = '&lt;a data-bind-content="name" data-bind-href="link" data-bind-class="name"&gt;&lt;/а&gt;'
+str.bind(str, {name: 'Elena', link: 'http://telerikacademy.com'});</code></pre>
+                        <strong>output</strong>
+                        <pre>
+<code>&lt;a data-bind-content="name" data-bind-href="link" data-bind-class="name" href="http://telerikacademy.com" class="Elena"&gt;Elena&lt;/а&gt;</code></pre>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+    <section id="input-section">
+        <button id="check" onclick="htmlBinding()">HTML binding</button>
+        <button id="clear" onclick="jsConsole.clearConsole()">Clear Console</button>
+    </section>
+    <section id="console">
+        <div id="js-console"></div>
+    </section>
+    <script src="../js-console-script/js-console.js"></script>
+    <script src="scripts/HTML binding.js"></script>
+</body>
+</html>

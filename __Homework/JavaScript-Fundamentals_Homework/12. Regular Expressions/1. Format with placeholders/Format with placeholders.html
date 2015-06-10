@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Problem 1. Format with placeholders</title>
+    <link href="styles/Format with placeholders.css" rel="stylesheet" />
+    <link href="../js-console-style/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <h1>Regular Expressions</h1>
+        <h2>Problem 1. Format with placeholders</h2>
+        <ul>
+            <li>
+                Write a function that formats a string. The function should have placeholders, as shown in the example
+                <ul>
+                    <li>Add the function to the <strong>String.prototype</strong></li>
+                </ul>
+            </li>
+        </ul>
+        <span>Example:</span>
+        <br />
+        <table>
+            <thead>
+                <tr>
+                    <td><span>input</span></td>
+                    <td><span>output</span></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>var options = {name: 'John'};<br/>'Hello, there! Are you #{name}?'.format(options);</td>
+                    <td>'Hello, there! Are you John'</td>
+                </tr>
+                <tr>
+                    <td>var options = {name: 'John', age: 13};<br/>'My name is #{name} and I am #{age}-years-old'.format(options);</td>
+                    <td>'My name is John and I am 13-years-old'</td>
+                </tr>
+            </tbody>
+        </table>
+    </header>
+    <section id="input-section">
+        <button id="check" onclick="printFormattedString()">Format with placeholders</button>
+        <button id="clear" onclick="jsConsole.clearConsole()">Clear Console</button>
+    </section>
+    <section id="console">
+        <div id="js-console"></div>
+    </section>
+    <script src="../js-console-script/js-console.js"></script>
+    <script src="scripts/Format with placeholders.js"></script>
+</body>
+</html>

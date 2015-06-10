@@ -1,0 +1,71 @@
+﻿body, header, section, div, ul, span, table {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    header {
+        text-align: center;
+        color: black;
+
+        & > ul {
+            text-align: left;
+            font-size: 1.2rem;
+            margin-left: 40px;
+            margin-top: 15px;
+            margin-bottom: 35px;
+
+            & li > ul {
+                margin-left: 40px;
+            }
+        }
+
+        & > span {
+            float:left;
+            margin-left: 20px;
+            font-size: 1.2rem;
+            font-style:italic;
+        }
+
+        table {
+            text-align: left;
+            border-collapse: collapse;
+            margin-left: 20px;
+            margin-top: 15px;
+            margin-bottom: 40px;
+
+            thead {
+                text-align: center;
+            }
+
+            tr, td {
+                border: 1px solid black;
+                padding: 10px;
+                font-size: 1.05rem;
+
+                & > span {
+                    font-weight:bold;
+                }
+            }
+        }
+    }
+
+    #input-section {
+        margin-left: 5px;
+
+        #check {
+            border-radius: 5px;
+            margin-left: 10px;
+        }
+
+        #clear {
+            border-radius: 5px;
+            margin-left: 10px;
+        }
+    }
+
+    #console {
+        margin-top: 15px;
+        margin-left: 5px;
+    }
+}
