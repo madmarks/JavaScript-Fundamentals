@@ -55,6 +55,30 @@ function htmlBinding() {
         return result;
     };
 
+    //String.prototype.bind = function (str, params) {
+
+    //    var regex = new RegExp('data-bind-(.+?)="(.+?)"', 'g'),
+    //        str = this,
+    //        cont = '';
+
+    //    str = str.replace(regex, function (all, type, value) {
+    //        if (type == 'href') {
+    //            return 'href="' + params[value] + '"';
+    //        } else if (type == 'content') {
+    //            cont = params[value];
+    //            return '';
+    //        }
+    //            //Should work for every standard or custom attribute you supply!
+    //        else {
+    //            return type + '="' + params[value] + '"';
+    //        }
+    //    });
+    //    if (cont != '') {
+    //        str = str.replace('</', cont + '</');
+    //    }
+    //    return str;
+    //};
+
 
     jsConsole.writeLine('var str = \'&lt;div data-bind-content="name"&gt;&lt;/div&gt;\';');
     jsConsole.writeLine('');

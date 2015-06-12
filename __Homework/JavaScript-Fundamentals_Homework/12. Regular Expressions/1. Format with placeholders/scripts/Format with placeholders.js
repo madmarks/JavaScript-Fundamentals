@@ -46,6 +46,17 @@ function printFormattedString() {
             return options[$1];
         });
     }
+
+    //String.prototype.customFormat = function (options) {
+    //    var str = this.toString(),
+    //        regex;
+    //    for (var prop in options) {
+    //        regex = new RegExp('\#\{' + prop + '\}', 'g');
+    //        str = str.replace(regex, options[prop]);
+    //    }
+
+    //    return str;
+    //};
     
     jsConsole.writeLine('var options = {name: \'John\'};');
     jsConsole.writeLine('');
