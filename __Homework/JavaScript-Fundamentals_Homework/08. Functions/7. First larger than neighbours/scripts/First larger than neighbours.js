@@ -54,10 +54,9 @@ function isElementBiggerThanItsNeighbours(array, index) {
 
         return true;
 
-    } else {
-
-        return false;
     }
+
+    return false;
 }
 
 function isArrayOfNumbers(array) {
