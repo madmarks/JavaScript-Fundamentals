@@ -53,7 +53,7 @@ function htmlBinding() {
         }
 
         return result;
-    }
+    };
 
 
     jsConsole.writeLine('var str = \'&lt;div data-bind-content="name"&gt;&lt;/div&gt;\';');
@@ -76,7 +76,7 @@ function htmlBinding() {
     jsConsole.writeLine('');
     jsConsole.write('output : ');
 
-    jsConsole.writeLine(str.bind(str, { name: 'Elena', link: 'http://telerikacademy.com' }).replace(/</g, '&lt;').replace(/>/g, '&gt;'));
+    jsConsole.writeLine(bindingString.bind(bindingString, { name: 'Elena', link: 'http://telerikacademy.com' }).replace(/</g, '&lt;').replace(/>/g, '&gt;'));
 
     jsConsole.writeLine('------------------------------------------------------------');
 }
