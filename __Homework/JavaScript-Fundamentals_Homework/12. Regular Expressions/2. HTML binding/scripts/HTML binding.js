@@ -56,11 +56,11 @@ function htmlBinding() {
     };
 
     //String.prototype.bind = function (str, params) {
-
+    //
     //    var regex = new RegExp('data-bind-(.+?)="(.+?)"', 'g'),
     //        str = this,
     //        cont = '';
-
+    //
     //    str = str.replace(regex, function (all, type, value) {
     //        if (type == 'href') {
     //            return 'href="' + params[value] + '"';
@@ -79,6 +79,34 @@ function htmlBinding() {
     //    return str;
     //};
 
+    //String.prototype.bind = function (attr) {
+    //    var str = this,
+    //        regex = /(?:data\-bind\-(\w+)="(\w+)")/g,
+    //        match,
+    //        matches = {};
+    //
+    //    while (match = regex.exec(str)) {
+    //        matches[match[1]] = match[2];
+    //    }
+    //
+    //    for (var key in matches) {
+    //        if (matches.hasOwnProperty(key)) {
+    //            if (key === 'content') {
+    //                var angleBracketIndex = str.indexOf('>');
+    //                str = str.insertAt(angleBracketIndex + 1, attr[matches[key]]);
+    //            } else {
+    //                var doubleQuotesIndex = str.lastIndexOf('\"');
+    //                str = str.insertAt(doubleQuotesIndex + 1, ' ' + key + '\"=' + attr[matches[key]] + '\"');
+    //            }
+    //        }
+    //    }
+    //
+    //    return str;
+    //};
+    //String.prototype.insertAt = function (index, string) {
+    //    return [this.slice(0, index), string, this.slice(index)].join('');
+    //};
+
 
     jsConsole.writeLine('var str = \'&lt;div data-bind-content="name"&gt;&lt;/div&gt;\';');
     jsConsole.writeLine('');
@@ -88,6 +116,7 @@ function htmlBinding() {
     jsConsole.write('output : ');
 
     jsConsole.writeLine(str.bind(str, { name: 'Steven' }).replace(/</g, '&lt;').replace(/>/g, '&gt;'));
+    //jsConsole.writeLine(str.bind({ name: 'Steven' }).replace(/</g, '&lt;').replace(/>/g, '&gt;'));
 
     jsConsole.writeLine('---');
 
@@ -101,6 +130,7 @@ function htmlBinding() {
     jsConsole.write('output : ');
 
     jsConsole.writeLine(bindingString.bind(bindingString, { name: 'Elena', link: 'http://telerikacademy.com' }).replace(/</g, '&lt;').replace(/>/g, '&gt;'));
+    //jsConsole.writeLine(bindingString.bind({ name: 'Elena', link: 'http://telerikacademy.com' }).replace(/</g, '&lt;').replace(/>/g, '&gt;'));
 
     jsConsole.writeLine('------------------------------------------------------------');
 }
