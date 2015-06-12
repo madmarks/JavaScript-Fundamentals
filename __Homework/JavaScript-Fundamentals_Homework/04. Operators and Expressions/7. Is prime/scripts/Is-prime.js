@@ -9,7 +9,8 @@ function isPrime() {
     // check for a remainder (if someone mistakenly put a float number)
     var remainder = jsConsole.read('#input') % 1;
 
-    var i;
+    var i,
+        limit;
 
     if (!isNaN(number) && !remainder) {
 
@@ -17,7 +18,7 @@ function isPrime() {
 
             if (number <= 100) {
 
-                for (i = 2; i < number; i++) {
+                for (i = 2, limit = Math.sqrt(number); i < limit; i++) {
 
                     if (!(number % i)) {
 
