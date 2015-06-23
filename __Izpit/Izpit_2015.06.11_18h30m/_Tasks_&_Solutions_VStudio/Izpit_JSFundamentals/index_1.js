@@ -1,46 +1,53 @@
-﻿function solve(args) {
+﻿// disable JSLint Error message: 'console' was used before it was defined.
+/*jslint devel: true */
 
-    var numbers = args[0].split(' ').map(Number);
+function solve(args) {
+
+    'use strict';
+
+    var //maximumNumberOfRocks,
+        maximumNumberOfRocks_ArrayMethods,
+        numbers = args[0].split(' ').map(Number);
     //console.log(numbers); 
 
     //=========================================================================================================//
 
-    function getIndexesOfPeaks(arr) {
-        var i,
-            len,
-            idxOfPeaks = [0];
-
-        for (i = 1, len = arr.length; i < len; i += 1) {
-
-            if ((i === (len - 1)) || ((arr[i - 1] < arr[i]) && (arr[i + 1] < arr[i]))) {
-
-                idxOfPeaks.push(i);
-            }
-        }
-
-        return idxOfPeaks;
-    }
+    //function getIndexesOfPeaks(arr) {
+    //    var i,
+    //        len,
+    //        idxOfPeaks = [0];
+    //
+    //    for (i = 1, len = arr.length; i < len; i += 1) {
+    //
+    //        if ((i === (len - 1)) || ((arr[i - 1] < arr[i]) && (arr[i + 1] < arr[i]))) {
+    //
+    //            idxOfPeaks.push(i);
+    //        }
+    //    }
+    //
+    //    return idxOfPeaks;
+    //}
     //console.log('indexesOfPeaks = ' + getIndexesOfPeaks(numbers));
 
-    function getMaximumNumberOfRocks(arr) {
-        var i,
-            len,
-            rocks,
-            max = 0,
-            indexesOfPeaks = getIndexesOfPeaks(arr);
-
-        for (i = 1, len = indexesOfPeaks.length; i < len; i += 1) {
-
-            rocks = indexesOfPeaks[i] - indexesOfPeaks[i - 1];
-
-            if (rocks > max) {
-
-                max = rocks;
-            }
-        }
-
-        return max;
-    }
+    //function getMaximumNumberOfRocks(arr) {
+    //    var i,
+    //        len,
+    //        rocks,
+    //        max = 0,
+    //        indexesOfPeaks = getIndexesOfPeaks(arr);
+    //
+    //    for (i = 1, len = indexesOfPeaks.length; i < len; i += 1) {
+    //
+    //        rocks = indexesOfPeaks[i] - indexesOfPeaks[i - 1];
+    //
+    //        if (rocks > max) {
+    //
+    //            max = rocks;
+    //        }
+    //    }
+    //
+    //    return max;
+    //}
 
     //=========================================================================================================//
 
@@ -72,35 +79,41 @@
 
     //=========================================================================================================//
 
-    //var maximumNumberOfRocks = getMaximumNumberOfRocks(numbers);
+    //maximumNumberOfRocks = getMaximumNumberOfRocks(numbers);
     //console.log('maximumNumberOfRocks = ' + maximumNumberOfRocks);
 
-    var maximumNumberOfRocks_ArrayMethods = getMaximumNumberOfRocks_ArrayMethods(numbers);
+    maximumNumberOfRocks_ArrayMethods = getMaximumNumberOfRocks_ArrayMethods(numbers);
     //console.log('maximumNumberOfRocks_ArrayMethods = ' + maximumNumberOfRocks_ArrayMethods);
 
+    //return maximumNumberOfRocks;
     return maximumNumberOfRocks_ArrayMethods;
 }
 
 //function solve(args) {
-
+//
+//    'use strict';
+//
 //    var i,
 //        len,
 //        numbers = args[0].split(' ').map(Number),
 //        currRocks = 1,
 //        maxRocks = 0;
-
-//    for (i = 1, len = numbers.length - 1; i < len; i++) {
-
+//
+//    for (i = 1, len = numbers.length - 1; i < len; i += 1) {
+//
 //        if (numbers[i] > numbers[i - 1] && numbers[i] > numbers[i + 1]) {
-
+//
 //            maxRocks = Math.max(currRocks, maxRocks);
 //            currRocks = 1;
+//
 //        } else {
-
-//            currRocks++;
+//
+//            currRocks += 1;
+//
 //        }
+//
 //    }
-
+//
 //    return Math.max(currRocks, maxRocks);
 //}
 
@@ -115,12 +128,12 @@ var test = [
 //console.log(solve(test[2]));
 
 console.log(solve(test[0]));
-console.log(solve(test[0]) == 2);
+console.log(solve(test[0]) === 2);
 
 console.log(solve(test[1]));
-console.log(solve(test[1]) == 4);
+console.log(solve(test[1]) === 4);
 
 console.log(solve(test[2]));
-console.log(solve(test[2]) == 5);
+console.log(solve(test[2]) === 5);
 
 //console.log(test);
